@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+
+  --color-border-line: #E5EDF5;
+  --color-logo: #031323;
+  --color-menu: #061b31;
+  --color-blue-primary: #533AFD;
+  --color-purple-circle: rgba(99, 91, 255, 0.4);
+  --color-h1: #0a2540;
+  --color-description: #425466;
+  --color-secondary: #64748d;
+  --color-card-borders: #e5edf5;
+  --color-purple2: #f5f5ff;
+  --color-bg: #fbfcfe;
+  --color-text-secondary: #50617a;
+  --color-border-secondary: #d9d9d9;
+  --color-blue-border: #182659
+}
+
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  border-left: 1px solid #E5EDF5;
+  border-right: 1px solid #E5EDF5;
+
+}
