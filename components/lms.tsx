@@ -60,7 +60,7 @@ export const LmsWidget = () => (
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-white rounded-xl p-3 border border-slate-200 shadow-sm transition-all hover:shadow-md hover:border-purple-300 group/stat cursor-pointer">
           <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-1">
-            O'quvchilar
+            O&apos;quvchilar
           </p>
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-extrabold text-slate-800">842</span>
@@ -75,7 +75,7 @@ export const LmsWidget = () => (
           </p>
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-extrabold text-slate-800">94%</span>
-            <span className="text-[10px] font-bold text-emerald-500">A'lo</span>
+            <span className="text-[10px] font-bold text-emerald-500">A&apos;lo</span>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ export const LmsWidget = () => (
             </div>
             <h5 className="text-sm font-bold">Backend Dasturlash</h5>
             <p className="text-[10px] text-slate-400 mt-0.5">
-              O'qituvchi: Jamshid Ch.
+              O&apos;qituvchi: Jamshid Ch.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export const LmsWidget = () => (
 
       <div className="flex-1 flex flex-col gap-3 mt-1">
         <h5 className="text-xs font-bold text-slate-700">
-          Guruhlar o'zlashtirishi
+          Guruhlar o&apos;zlashtirishi
         </h5>
 
         {[
@@ -133,7 +133,7 @@ export const LmsWidget = () => (
             className="group/course relative flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-100 shadow-sm hover:border-purple-200 hover:shadow-md transition-all cursor-pointer"
           >
             <div className="absolute -top-7 right-0 bg-slate-800 text-white text-[9px] font-bold py-1 px-2 rounded opacity-0 group-hover/course:opacity-100 transition-opacity z-20 pointer-events-none">
-              O'rtacha ball: {course.progress}%
+              O&apos;rtacha ball: {course.progress}%
             </div>
 
             <div className="flex items-center gap-3 w-1/2">

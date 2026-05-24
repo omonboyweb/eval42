@@ -51,11 +51,11 @@ export const FaqSection = () => {
           <div className="lg:w-1/2">
             <div className="sticky top-32">
               <h2 className="text-[32px] leading-[102%] font-light text-h1 tracking-[-0.02em]">
-                Ko'p beriladigan savollar
+                Ko&apos;p beriladigan savollar
               </h2>
               <p className="text-[28px] leading-[102%] font-light text-secondary tracking-[-0.03em] mb-8">
                 Raqamli transformatsiya va bizning ekotizim haqida
-                mijozlarimizni eng ko'p qiziqtirgan savollarga javoblar.
+                mijozlarimizni eng ko&apos;p qiziqtirgan savollarga javoblar.
               </p>
 
               <div className="p-6 bg-slate-50 rounded-md md:rounded-2xl border border-slate-100">
@@ -67,7 +67,7 @@ export const FaqSection = () => {
                   berishga tayyor.
                 </p>
                 <button className="w-full rounded-md font-medium text-sm px-6 py-3 bg-white text-slate-900 border border-slate-200 transition-all hover:border-blue-primary hover:text-blue-primary active:scale-95 shadow-sm">
-                  Biz bilan bog'lanish
+                  Biz bilan bog&apos;lanish
                 </button>
               </div>
             </div>

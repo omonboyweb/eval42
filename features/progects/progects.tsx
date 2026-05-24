@@ -11,7 +11,7 @@ const PROJECTS_DATA = [
   {
     id: "halalhub",
     logo: "/A Lab.png",
-    title: "HalalHub — Oziq-ovqat yetkazib berish bozorini raqamlashtirish.",
+    title: "HalalHub — A digital online system for the food delivery market",
     banner: "/halalhub.png",
     link: "https://wehalalhub.com",
     stats: {
@@ -23,15 +23,16 @@ const PROJECTS_DATA = [
   {
     id: "next-project-1",
     logo: "/Circle.png",
-    title: "Infodeck — Barcha o'quv markazlarni ichiga jamlagan",
+    title: "Infodeck — Education project that includes all educational centers",
     banner: "/infodesk.png",
     link: "#",
-    stats: { countries: "UZB", users: "10K+", monitoring: "12/5" },
+    stats: { countries: "UZB", users: "10K+", monitoring: "24/7" },
   },
   {
     id: "next-project-2",
     logo: "/hooks.png",
-    title: "Homex — Qurilish va ustachilik.",
+    title:
+      "Homex — Construction, repair and online market project for craftsmen",
     banner: "/homex.png",
     link: "#",
     stats: { countries: "UZB", users: "10K+", monitoring: "24/7" },
@@ -49,14 +50,12 @@ export const ProjectsAccordion = () => {
     <section className="container px-4 py-20">
       <div className="flex flex-col md:justify-between pb-10">
         <h2 className="text-[28px] md:text-[32px] md:px-4 leading-[102%] font-light text-h1 tracking-[-0.02em] text-left md:w-[50%]">
-          Murakkab biznes jarayonlarini zamonaviy raqamli ekotizimga
-          aylantiramiz.
+          From ideas to finished products at production level.
         </h2>
-        <p className="text-[18px] leading-[140%] md:px-4 tarcking-[-0.02em] text-secondary font-light md:w-[45%]">
-          Fortune 100 ro'yxatiga kiruvchi kompaniyalarining 50 foizi o'z
-          bizneslarini rivojlantirish uchun Stripe’dan foydalangan — xalqaro
-          miqyosda kengayishdan tortib, mijozlar tajribasini qayta tasavvur
-          qilishgacha.
+        <p className="text-[18px] leading-[140%] md:px-4 tarcking-[-0.02em] text-gray-800/70  font-light md:w-[45%]">
+          The digital platforms I develop and optimize provide a seamless
+          interface for users and a stable and scalable infrastructure for
+          businesses.
         </p>
       </div>
       <div className="flex flex-col gap-4">
@@ -97,7 +96,7 @@ export const ProjectsAccordion = () => {
                       onClick={(e) => e.stopPropagation()}
                       className="hidden sm:inline-flex px-6 py-2.5 rounded-md border border-slate-200 text-blue-primary font-medium text-sm hover:bg-slate-50 transition-colors"
                     >
-                      Ilovani ko'rish
+                      View application
                     </Link>
                   ) : (
                     <div className="w-10 h-10 rounded-md bg-purple-100 text-purple-600 flex items-center justify-center group-hover:bg-purple-200 transition-colors">
@@ -144,9 +143,7 @@ export const ProjectsAccordion = () => {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-slate-400">
-                          Faol foydalanuvchilar:
-                        </span>
+                        <span className="text-slate-400">Active users:</span>
                         <span className="font-medium text-slate-800">
                           {project.stats.users}
                         </span>
@@ -163,7 +160,7 @@ export const ProjectsAccordion = () => {
                       target="_blank"
                       className="sm:hidden w-full text-center px-6 py-3 mt-2 rounded-md border border-slate-200 text-blue-primary font-medium text-sm hover:bg-slate-50 transition-colors"
                     >
-                      Ilovani ko'rish
+                      View application
                     </Link>
                   </div>
                 </div>
@@ -174,55 +171,56 @@ export const ProjectsAccordion = () => {
       </div>
       <div className="mt-44 mb-30">
         <h2 className="text-[28px] md:text-[32px] leading-[102%] font-light text-h1 tracking-[-0.02em] text-left md:w-[50%]">
-          Tajribali ekspertlar yordamida natijaga tezroq erishing
+          Achieve results faster with the right architecture and experience.
         </h2>
         <div className="mt-15 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div className="flex flex-col">
-            <div className="border border-border-secondary w-fit p-[11px] rounded-sm bg-white/50">
+            <div className="border border-border-secondary w-fit p-2.75 rounded-sm bg-white/50">
               <NonameIcons />
             </div>
             <h3 className="text-base font-medium leading-[138%] tracking-[-0.03em] text-menu mt-4">
-              Professional xizmatlar
+              Technical Consultation
             </h3>
             <p className="font-light text-base leading-[140%] tracking-[-0.03em] text-text-secondary mt-2">
-              Biznesingizni raqamlashtirish boʻyicha individual yoʻl xaritasini
-              shakllantiring. Loyihani joriy qilish, murakkab integratsiyalar va
-              tizimlarni migratsiya qilishda bizning mutaxassislarimizga
-              tayanishingiz mumkin.{" "}
+              Tips for properly configuring the Next.js ecosystem for new
+              projects, building an architectural strategy, and migrating legacy
+              codebases to a modern stack without errors. <br />
               <span className="text-blue-primary text-sm font-medium hover:underline cursor-pointer transition-all">
-                Xizmatlarni ko'rish
+                Talking about the project
               </span>
             </p>
           </div>
           <div className="flex flex-col">
-            <div className="border border-border-secondary w-fit p-[11px] rounded-sm bg-white/50">
+            <div className="border border-border-secondary w-fit p-2.75 rounded-sm bg-white/50">
               <ManyUsers />
             </div>
             <h3 className="text-base font-medium leading-[138%] tracking-[-0.03em] text-menu mt-4">
-              Texnik monitoring
+              Productivity and Code Audit
             </h3>
             <p className="font-light text-base leading-[140%] tracking-[-0.03em] text-text-secondary mt-2">
-              Loyiha ishga tushgandan so'ng ham biz siz bilanmiz. Tizimlar
-              barqarorligini 24/7 nazorat qilamiz va har qanday yuklamalarga
-              bardosh beradigan server arxitekturasini ta'minlaymiz.{" "}
+              Deeply analyze your existing web applications, optimize Core Web
+              Vitals metrics, identify the causes of slow loading and maximize
+              site speed.
+              <br />{" "}
               <span className="text-blue-primary font-medium text-sm hover:underline cursor-pointer transition-all">
-                Batafsil o'qish
+                Order an audit
               </span>
             </p>
           </div>
           <div className="flex flex-col">
-            <div className="border border-border-secondary w-fit p-[11px] rounded-sm bg-white/50">
+            <div className="border border-border-secondary w-fit p-2.75 rounded-sm bg-white/50">
               <HelpingIcons />
             </div>
             <h3 className="text-base font-medium leading-[138%] tracking-[-0.03em] text-menu mt-4">
-              Kiberxavfsizlik auditi
+              Client-Side Security
             </h3>
             <p className="font-light text-base leading-[140%] tracking-[-0.03em] text-text-secondary mt-2">
-              Platformangizdagi zaifliklarni aniqlash va ularni bartaraf etish
-              bo'yicha to'liq audit. Ma'lumotlaringizni E2EE shifrlash va
-              zamonaviy xavfsizlik standartlari asosida himoya qilamiz.{" "}
+              Check the security posture of a web application. Store tokens
+              securely in HttpOnly cookies, privacy-first and eliminate XSS/CSRF
+              vulnerabilities.
+              <br />
               <span className="text-blue-primary font-medium text-sm hover:underline cursor-pointer transition-all">
-                Auditga yozilish
+                Security check
               </span>
             </p>
           </div>

@@ -109,12 +109,12 @@ export default function Footer() {
                   href="/#contact"
                   className="hover:text-white transition-colors"
                 >
-                  Bog'lanish
+                  Bog&apos;lanish
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white transition-colors">
-                  Xizmat ko'rsatish shartlari
+                  Xizmat ko&apos;rsatish shartlari
                 </Link>
               </li>
               <li>

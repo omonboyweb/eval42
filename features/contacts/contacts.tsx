@@ -48,12 +48,12 @@ const Contacts = () => {
       <div className="container mx-auto px-4 py-20 lg:py-32 flex flex-col lg:flex-row gap-16 lg:gap-24">
         <div className="flex flex-col items-start lg:w-1/2 pt-4">
           <h2 className="text-[36px] leading-[119%] font-light text-h1 tracking-[-0.03em]">
-            Keling, loyihangizni yangi bosqichga olib chiqamiz.
+            Keling, g&apos;oyangizni birgalikda barpo etamiz.
           </h2>
           <p className="text-[28px] leading-[119%] font-light text-description tracking-[-0.02em] mt-6">
-            To‘g‘ri texnologik yechimni tanlash — muvaffaqiyatning yarmi.
-            Bizning jamoamiz loyihangiz tahlili va uni amalga oshirishda sizga
-            eng yaqin hamkor bo‘lishga tayyor.
+            To‘g‘ri tanlangan texnologik arxitektura — mahsulot
+            muvaffaqiyatining poydevori. Loyihangiz tahlili va uni amalga
+            oshirishda muhandislik yechimlarim bilan yordam berishga tayyorman.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ const Contacts = () => {
                   <div className="flex flex-col gap-8">
                     <div>
                       <h3 className="text-[24px] font-semibold text-slate-900 tracking-tight mb-2">
-                        Siz bilan qanday bog'lanamiz?
+                        Siz bilan qanday bog&apos;lanamiz?
                       </h3>
                       <p className="text-[15px] text-slate-500">
                         Bizga faqat eng muhim aloqa vositalari kerak.
@@ -140,11 +140,11 @@ const Contacts = () => {
                   <div className="flex flex-col gap-8 animate-in fade-in slide-in-from-right-4 duration-300">
                     <div>
                       <h3 className="text-[24px] font-semibold text-slate-900 tracking-tight mb-2">
-                        Biznesingiz haqida
+                        Kompaniya va Lavozim
                       </h3>
                       <p className="text-[15px] text-slate-500">
-                        Bu bizga tizim arxitekturasini aniq sizga moslashda
-                        yordam beradi.
+                        Loyiha miqyosini to&apos;g&apos;ri baholash uchun qisqacha
+                        ma&apos;lumot (ixtiyoriy).
                       </p>
                     </div>
 
@@ -158,21 +158,21 @@ const Contacts = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          placeholder="Masalan: Infonex MChJ"
+                          placeholder="Masalan: Startap nomi, MChJ"
                           className="sm:w-2/3 bg-slate-50 hover:bg-slate-100 focus:bg-white border border-transparent focus:border-[#635BFF]/30 focus:ring-4 focus:ring-[#635BFF]/10 rounded-lg px-4 py-3 text-[14px] text-slate-800 transition-all outline-none"
                         />
                       </div>
 
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4">
                         <label className="text-[14px] text-slate-600 font-medium sm:w-1/3">
-                          Lavozimingiz
+                          Sizning rolingiz
                         </label>
                         <input
                           type="text"
                           name="role"
                           value={formData.role}
                           onChange={handleChange}
-                          placeholder="Masalan: Direktor, Menejer"
+                          placeholder="Masalan: Product Owner, Founder"
                           className="sm:w-2/3 bg-slate-50 hover:bg-slate-100 focus:bg-white border border-transparent focus:border-[#635BFF]/30 focus:ring-4 focus:ring-[#635BFF]/10 rounded-lg px-4 py-3 text-[14px] text-slate-800 transition-all outline-none"
                         />
                       </div>
@@ -187,8 +187,8 @@ const Contacts = () => {
                         Loyiha tafsilotlari
                       </h3>
                       <p className="text-[15px] text-slate-500">
-                        Qanday tizim qurmoqchi ekanligingizni qisqacha ta'riflab
-                        bering.
+                        Qanday tizim yoki interfeys qurmoqchi ekanligingizni
+                        qisqacha ta&apos;riflang.
                       </p>
                     </div>
 
@@ -201,7 +201,7 @@ const Contacts = () => {
                         value={formData.message}
                         onChange={handleChange}
                         rows={4}
-                        placeholder="Loyihadan kutayotgan maqsadlaringiz..."
+                        placeholder="Ekotizim, Dashboard, Mobil ilova yoki maxsus arxitektura mantiqlari..."
                         className="sm:w-2/3 bg-slate-50 hover:bg-slate-100 focus:bg-white border border-transparent focus:border-[#635BFF]/30 focus:ring-4 focus:ring-[#635BFF]/10 rounded-lg px-4 py-3 text-[14px] text-slate-800 transition-all outline-none resize-none"
                       />
                     </div>
@@ -233,7 +233,7 @@ const Contacts = () => {
                     type="submit"
                     className="bg-[#0F172A] text-white text-[14px] font-medium px-7 py-2.5 rounded-full hover:bg-slate-800 transition-all active:scale-95 shadow-md shadow-slate-900/20"
                   >
-                    So'rovni yuborish
+                    So&apos;rovni yuborish
                   </button>
                 )}
               </div>

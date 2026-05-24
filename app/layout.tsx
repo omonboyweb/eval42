@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/layouts/header";
 import Footer from "@/layouts/footer";
+import { cn } from "@/lib/utils";
 
 const sfPro = localFont({
   src: [
@@ -46,8 +47,7 @@ const sfPro = localFont({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://new-infonex.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://eval42.uz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -59,29 +59,31 @@ export const metadata: Metadata = {
       "ru-RU": "/ru",
     },
   },
-  generator: "Infonex",
-  applicationName: "Infonex Ecosystem",
+  generator: "Omonbek",
+  applicationName: "Eval42 Ecosystem",
   referrer: "origin-when-cross-origin",
   keywords: [
     "ERP tizimlari",
     "CRM yaratish",
     "LMS platforma",
     "Kiberxavfsizlik",
-    "O'zbekistonda IT kompaniya",
     "Raqamli biznes",
     "SaaS arxitektura",
   ],
-  authors: [{ name: "Eval" }, { name: "Infonex Team", url: siteUrl }],
-  creator: "Infonex",
-  publisher: "Infonex",
+  authors: [
+    { name: "Omonbek" },
+    { name: "Omonbek Khujamurodov", url: siteUrl },
+  ],
+  creator: "Omonbek",
+  publisher: "Omonbek",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   title: {
-    default: "Infonex | Raqamli Ekotizimlar va Xavfsiz Yechimlar",
-    template: "%s | Infonex",
+    default: "Omonbek | Raqamli Ekotizimlar va Xavfsiz Yechimlar",
+    template: "%s | Eval42",
   },
   description:
     "Biznesingizni avtomatlashtirish uchun ERP, LMS va murakkab SaaS tizimlarini qurish bo'yicha ekspertlar.",
@@ -90,23 +92,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "uz_UZ",
     url: siteUrl,
-    title: "Infonex | Raqamli Ekotizimlar",
+    title: "Eval42 | Raqamli Ekotizimlar",
     description:
       "ERP, LMS va murakkab biznes tizimlarini qurish bo'yicha ekspertlar.",
-    siteName: "Infonex",
+    siteName: "Eval42",
     images: [
       {
         url: "/og-logo.png",
         width: 1200,
         height: 630,
-        alt: "Infonex - Digital Solutions",
+        alt: "Eval42 - Digital Solutions",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Infonex | Raqamli Ekotizimlar",
+    title: "Eval42 | Raqamli Ekotizimlar",
     description:
       "ERP, LMS va murakkab biznes tizimlarini qurish bo'yicha ekspertlar.",
     images: ["/og-logo.png"],
@@ -119,7 +121,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="uz" className={`${sfPro.className} antialiased scroll-smooth`}>
+    <html
+      lang="uz"
+      className={cn(
+        "antialiased",
+        "scroll-smooth",
+        sfPro.className,
+        "font-sans",
+      )}
+    >
       <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-blue-primary/20 selection:text-blue-primary">
         <Header />
         <main className="flex-1">{children}</main>

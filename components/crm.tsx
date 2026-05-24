@@ -204,7 +204,7 @@ export const DashboardWidget = () => (
                 className="group/bar flex-1 relative flex flex-col justify-end h-full"
               >
                 <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[10px] font-bold py-1 px-2.5 rounded shadow-lg opacity-0 group-hover/bar:opacity-100 group-hover/bar:-translate-y-1 transition-all duration-200 whitespace-nowrap z-20 pointer-events-none">
-                  {Math.round(height * 1.5)} mln so'm
+                  {Math.round(height * 1.5)} mln so&apos;m
                 </div>
 
                 <div

@@ -34,11 +34,11 @@ export const ServicesBentoGrid = () => {
     <section className="bg-bg container mx-auto px-4 py-24">
       <div className="mb-16 md:text-left md:max-w-[60%]">
         <h2 className="text-[32px] leading-[102%] font-light text-h1 tracking-[-0.02em]">
-          Biznesingizni boshqarish uchun yaxlit ekotizim.
+          Simple interfaces for complex ideas
         </h2>
-        <p className="text-[32px] leading-[102%] font-light text-secondary tracking-[-0.03em]">
-          Biz faqat kod yozmaymiz, biz biznesingizning har bir bo‘g‘inini
-          raqamlashtiramiz.
+        <p className="text-[32px] leading-[102%] font-light text-gray-800/70 tracking-[-0.03em]">
+          I don&apos;t just write code — I turn your project into a high-performance,
+          pixel-perfect, and user-friendly digital product.
         </p>
       </div>
 
@@ -53,15 +53,15 @@ export const ServicesBentoGrid = () => {
           <div className="flex flex-col z-10">
             <div className="flex justify-between w-full items-center">
               <h3 className="text-2xl leading-[135%] font-semibold text-h1">
-                ERP va CRM tizimlar
+                SaaS & Dashboard Architecture
               </h3>
               <button className="rounded-sm font-medium text-sm w-10 h-10 bg-purple2 hover:bg-blue-primary hover:text-white border transition-all hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95 text-blue-primary flex justify-center items-center">
                 <LinerIcons className="text-inherit" />
               </button>
             </div>
             <p className="text-description text-[16px] leading-relaxed mt-4 max-w-[90%]">
-              Barcha biznes jarayonlaringizni bitta joyda boshqaring. Savdo,
-              ombor va xodimlar nazorati uchun kuchli ekotizim.
+              Multi-tenant complex control panels and CRM systems. Seamless
+              interface for managing large amounts of data in real time
             </p>
           </div>
           <div className="overflow-hidden z-10 mt-auto">
@@ -85,15 +85,15 @@ export const ServicesBentoGrid = () => {
           <div className="relative z-50 pointer-events-none w-full mb-4">
             <div className="flex justify-between items-center pointer-events-auto">
               <h3 className="text-2xl font-semibold text-h1 leading-[135%]">
-                LMS Platformalar
+                Product Engineering
               </h3>
               <button className="rounded-sm font-medium text-sm w-8 h-8 bg-purple2 hover:bg-blue-primary hover:text-white border transition-all hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95 text-blue-primary flex justify-center items-center">
                 <LinerIcons className="text-inherit w-3 h-4" />
               </button>
             </div>
             <p className="text-description text-[16px] leading-relaxed mt-4 pointer-events-auto">
-              Ta'lim markazlari uchun interaktiv darslar va o'quvchilarni
-              nazorat qilish tizimi.
+              Interactive components that encourage user action, robust forms
+              protected by Zod , and smooth animations.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export const ServicesBentoGrid = () => {
         </BentoCard>
         <BentoCard
           dark
-          className="md:col-span-1 lg:col-span-2 p-8 flex flex-col relative min-h-[480px] md:min-h-[500px]"
+          className="md:col-span-1 lg:col-span-2 p-8 flex flex-col relative min-h-120 md:min-h-125"
         >
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
             <div className="absolute bottom-10 left-10 w-45 h-45 md:w-55 md:h-55 rounded-full blur-[100px] opacity-30">
@@ -120,15 +120,15 @@ export const ServicesBentoGrid = () => {
           <div className="relative z-10 pb-[75%] sm:pb-[65%] md:pb-[75%] pointer-events-none">
             <div className="flex justify-between items-center pointer-events-auto">
               <h3 className="text-2xl leading-[135%] font-semibold text-white">
-                Custom Development
+                Scalable Codebase
               </h3>
               <button className="rounded-sm font-medium text-sm w-8 h-8 bg-purple2 hover:bg-blue-primary hover:text-white border border-slate-700 transition-all hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95 text-blue-primary flex justify-center items-center">
                 <LinerIcons className="text-inherit w-3 h-4" />
               </button>
             </div>
             <p className="text-slate-400 text-[16px] leading-relaxed max-w-[88%] mt-2">
-              Tayyor shablonlarga sig'maydigan noyob biznes mantiqlari uchun
-              maxsus arxitektura.
+              Legacy-free, future-proof TypeScript architecture and secure
+              Next.js middleware integrations.
             </p>
           </div>
 
@@ -140,20 +140,18 @@ export const ServicesBentoGrid = () => {
             </div>
             <pre className="text-[10px] md:text-[11px] leading-[1.7] text-slate-300 overflow-y-auto h-full pb-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <code>
-                <span className="text-slate-500">
-                  {"// Infonex — Maxsus biznes mantiq orkestratori\n"}
-                </span>
+                <span className="text-slate-500"></span>
                 <span className="text-purple-400">import</span> {"{"} Core,
                 Security, Payment {"}"}{" "}
                 <span className="text-purple-400">from</span>{" "}
-                <span className="text-amber-300">'@infonex/enterprise'</span>;
+                <span className="text-amber-300">&apos;@infonex/enterprise&apos;</span>;
                 {"\n\n"}
                 <span className="text-purple-400">async function</span>{" "}
                 <span className="text-blue-400">deploySystem</span>(config:{" "}
                 <span className="text-emerald-400">AppConfig</span>) {"{\n"}
                 {"  "}
                 <span className="text-slate-500">
-                  {"// 1. Yuqori yuklamali (Highload) baza\n"}
+                  {"// 1. Highload base\n"}
                 </span>
                 {"  "}
                 <span className="text-purple-400">const</span> db ={" "}
@@ -161,15 +159,15 @@ export const ServicesBentoGrid = () => {
                 <span className="text-emerald-400">Core</span>.
                 <span className="text-blue-400">connect</span>({"{\n"}
                 {"    "}mode:{" "}
-                <span className="text-amber-300">'high-availability'</span>,
+                <span className="text-amber-300">&apos;high-availability&apos;</span>,
                 {"\n"}
                 {"    "}encryption:{" "}
-                <span className="text-amber-300">'E2EE'</span>
+                <span className="text-amber-300">&apos;E2EE&apos;</span>
                 {"\n"}
                 {"  }"});{"\n\n"}
                 {"  "}
                 <span className="text-slate-500">
-                  {"// 2. Mahalliy to'lovlar va avtomatik soliq\n"}
+                  {"// 2. Local fees and automatic tax\n"}
                 </span>
                 {"  "}
                 <span className="text-purple-400">const</span> billing ={" "}
@@ -177,20 +175,18 @@ export const ServicesBentoGrid = () => {
                 <span className="text-emerald-400">Payment</span>.
                 <span className="text-blue-400">Gateway</span>({"{\n"}
                 {"    "}providers: [
-                <span className="text-amber-300">'Payme'</span>,{" "}
-                <span className="text-amber-300">'Click'</span>,{" "}
-                <span className="text-amber-300">'Uzum'</span>],{"\n"}
-                {"    "}currency: <span className="text-amber-300">'UZS'</span>,
+                <span className="text-amber-300">&apos;Stripe&apos;</span>,{" "}
+                <span className="text-amber-300">&apos;Bank of America&apos;</span>,{" "}
+                <span className="text-amber-300">&apos;PayPal&apos;</span>],{"\n"}
+                {"    "}currency: <span className="text-amber-300">&apos;USD&apos;</span>,
                 {"\n"}
                 {"    "}autoTaxCalculate:{" "}
                 <span className="text-purple-400">true</span>,{" "}
-                <span className="text-slate-500">
-                  {"// QQS hisob-kitobi\n"}
-                </span>
+                <span className="text-slate-500">{"// VAT calculation\n"}</span>
                 {"  }"});{"\n\n"}
                 {"  "}
                 <span className="text-slate-500">
-                  {"// 3. Xavfsizlik va rollarni ajratish (RBAC)\n"}
+                  {"// 3. Security and Role Separation \n"}
                 </span>
                 {"  "}
                 <span className="text-purple-400">const</span> auth ={" "}
@@ -198,21 +194,21 @@ export const ServicesBentoGrid = () => {
                 <span className="text-emerald-400">Security</span>.
                 <span className="text-blue-400">Guard</span>({"{\n"}
                 {"    "}roles: [
-                <span className="text-amber-300">'Direktor'</span>,{" "}
-                <span className="text-amber-300">'Menejer'</span>,{" "}
-                <span className="text-amber-300">'Hisobchi'</span>],{"\n"}
-                {"    "}mfa: <span className="text-amber-300">'sms-auth'</span>
+                <span className="text-amber-300">&apos;Director&apos;</span>,{" "}
+                <span className="text-amber-300">&apos;Manager&apos;</span>,{" "}
+                <span className="text-amber-300">&apos;Accountant&apos;</span>],{"\n"}
+                {"    "}mfa: <span className="text-amber-300">&apos;sms-auth&apos;</span>
                 {"\n"}
                 {"  }"});{"\n\n"}
                 {"  "}console.<span className="text-blue-400">log</span>(
                 <span className="text-amber-300">
-                  `[INFONEX] Tizim muvaffaqiyatli ishga tushdi!`
+                  `[Progect] The system has been successfully launched!`
                 </span>
                 );{"\n"}
                 {"  "}
                 <span className="text-purple-400">return</span> {"{"} status:{" "}
-                <span className="text-amber-300">"Online"</span>, uptime:{" "}
-                <span className="text-amber-300">"99.99%"</span> {"}"};{"\n"}
+                <span className="text-amber-300">&quot;Online&quot;</span>, uptime:{" "}
+                <span className="text-amber-300">&quot;99.99%&quot;</span> {"}"};{"\n"}
                 {"}"}
               </code>
             </pre>
@@ -230,14 +226,15 @@ export const ServicesBentoGrid = () => {
           <div className="relative z-10">
             <div className="flex justify-between items-center">
               <h3 className="text-2xl leading-[135%] font-semibold text-h1">
-                Mobile Apps & UI/UX
+                Performance First
               </h3>
               <button className="rounded-sm font-medium w-8 h-8 bg-white/70 backdrop-blur-md hover:bg-blue-primary hover:text-white border border-white/50 transition-all hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95 text-blue-primary flex justify-center items-center">
                 <LinerIcons className="text-inherit w-3 h-4" />
               </button>
             </div>
             <p className="text-description leading-relaxed max-w-[85%] text-[16px] mt-2">
-              Foydalanuvchilar sevib ishlatadigan mobil ilovalar va dizayn.
+              Interfaces that load in seconds on any smartphone (LCP optimized).
+              100% result in Core Web Vitals indicators.
             </p>
           </div>
           <div className="relative z-20 w-full h-full mt-4">
@@ -261,15 +258,15 @@ export const ServicesBentoGrid = () => {
 
           <div className="flex justify-between items-center z-10">
             <h3 className="text-2xl leading-[135%] font-semibold text-h1">
-              Kiberxavfsizlik
+              Security & Privacy
             </h3>
             <button className="rounded-sm font-medium text-sm w-8 h-8 bg-purple2 hover:bg-blue-primary hover:text-white border transition-all hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95 text-blue-primary flex justify-center items-center">
               <LinerIcons className="text-inherit w-3 h-4" />
             </button>
           </div>
           <p className="text-description text-[16px] leading-relaxed max-w-[90%] z-10 mt-2">
-            Ma'lumotlaringiz E2EE standartida shifrlanadi. Har qanday xurujlarga
-            qarshi mustahkam qalqon.
+            Privacy-first architecture. Securely storing tokens in HttpOnly
+            cookies and fully protecting the client side from XSS/CSRF attacks.
           </p>
         </BentoCard>
       </div>
