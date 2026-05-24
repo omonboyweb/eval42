@@ -18,13 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
           <div className="lg:col-span-2 flex flex-col items-start">
             <Link href="/#hero">
-              <Image
-                src="/logo.png"
-                alt="Infonex logo"
-                width={60}
-                height={60}
-                className="object-cover"
-              />
+              <span className="text-[42px]">Eval42</span>
             </Link>
             <p className="mt-6 text-[15px] leading-relaxed text-white max-w-70">
               Biznesingizni raqamli ekotizimga aylantiruvchi zamonaviy
@@ -157,12 +151,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-500">
-          <p>2026 Copyright© Infonex.</p>
+          <p>2026 Copyright© Eval42.</p>
           <a
             href="mailto:omonbek001@gmail.com"
             className="hover:text-slate-300 transition-colors"
           >
-            omonbek001@gmail.com
+            info@eval42.uz
           </a>
           <p>Barcha huquqlar himoyalangan.</p>
         </div>

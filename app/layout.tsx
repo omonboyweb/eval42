@@ -59,58 +59,65 @@ export const metadata: Metadata = {
       "ru-RU": "/ru",
     },
   },
-  generator: "Omonbek",
-  applicationName: "Eval42 Ecosystem",
+  generator: "Next.js",
+  applicationName: "Eval42",
   referrer: "origin-when-cross-origin",
+
   keywords: [
-    "ERP tizimlari",
-    "CRM yaratish",
-    "LMS platforma",
-    "Kiberxavfsizlik",
-    "Raqamli biznes",
-    "SaaS arxitektura",
+    "Omonbek Khujamurodov",
+    "Eval42",
+    "Frontend Engineer",
+    "Next.js Expert",
+    "React Architect",
+    "Multi-tenant SaaS",
+    "Web Performance Optimization",
+    "Cybersecurity Specialist",
+    "Open Source Software",
   ],
-  authors: [
-    { name: "Omonbek" },
-    { name: "Omonbek Khujamurodov", url: siteUrl },
-  ],
-  creator: "Omonbek",
-  publisher: "Omonbek",
+
+  authors: [{ name: "Omonbek Khujamurodov", url: siteUrl }],
+  creator: "Omonbek Khujamurodov",
+  publisher: "Omonbek Khujamurodov",
+
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+
   title: {
-    default: "Omonbek | Raqamli Ekotizimlar va Xavfsiz Yechimlar",
+    default:
+      "Omonbek Khujamurodov | Frontend Engineer & Open-Source Maintainer",
     template: "%s | Eval42",
   },
   description:
-    "Biznesingizni avtomatlashtirish uchun ERP, LMS va murakkab SaaS tizimlarini qurish bo'yicha ekspertlar.",
+    "Yuqori samaradorlikka ega Next.js/React ilovalari, ko'p ijarali (multi-tenant) SaaS arxitekturalari va xavfsiz raqamli ekotizimlar yaratuvchi dasturchining shaxsiy portfoliom va open-source loyihalari.",
 
   openGraph: {
-    type: "website",
+    type: "profile",
+    firstName: "Omonbek",
+    lastName: "Khujamurodov",
+    username: "eval42",
     locale: "uz_UZ",
     url: siteUrl,
-    title: "Eval42 | Raqamli Ekotizimlar",
+    title: "Omonbek Khujamurodov | Frontend Architect",
     description:
-      "ERP, LMS va murakkab biznes tizimlarini qurish bo'yicha ekspertlar.",
+      "Murakkab veb-arxitekturalar, 3D veb-yechimlar va ochiq kodli dasturlar platformasi.",
     siteName: "Eval42",
     images: [
       {
         url: "/og-logo.png",
         width: 1200,
         height: 630,
-        alt: "Eval42 - Digital Solutions",
+        alt: "Omonbek Khujamurodov - Eval42 Ecosystem",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Eval42 | Raqamli Ekotizimlar",
-    description:
-      "ERP, LMS va murakkab biznes tizimlarini qurish bo'yicha ekspertlar.",
+    title: "Omonbek Khujamurodov | Eval42 Ecosystem",
+    description: "Next.js, Multi-tenant SaaS va Kiberxavfsizlik yechimlari.",
     images: ["/og-logo.png"],
   },
 };
@@ -120,17 +127,61 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${siteUrl}/#person`,
+        name: "Omonbek Khujamurodov",
+        alternateName: "Eval",
+        jobTitle: "Senior Frontend Engineer",
+        url: siteUrl,
+        image: `${siteUrl}/og-logo.png`,
+        sameAs: [
+          "https://github.com/omonboyweb",
+          "https://www.linkedin.com/in/omonbekxojamurodov/",
+        ],
+        knowsAbout: [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Software Architecture",
+          "Web Performance",
+          "Cybersecurity",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: "Eval42",
+        description:
+          "Omonbek Khujamurodov'ning shaxsiy portfoliom va open-source ekotizimi.",
+        publisher: {
+          "@id": `${siteUrl}/#person`,
+        },
+      },
+    ],
+  };
+
   return (
     <html
       lang="uz"
       className={cn(
         "antialiased",
         "scroll-smooth",
+        sfPro.variable,
         sfPro.className,
         "font-sans",
       )}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-blue-primary/20 selection:text-blue-primary">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <Header />
         <main className="flex-1">{children}</main>
         <div className="mt-auto">
