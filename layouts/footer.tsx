@@ -1,129 +1,34 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   const data = [
-    { title: "Telegram", link: "https://t.me/Tech_Newsuz" },
-    { title: "Instagram", link: "https://www.instagram.com/infonex.uz/" },
-    { title: "GitHub", link: "https://github.com/infonex-dotcom" },
-    { title: "LinkedIn", link: "https://www.linkedin.com/company/infonex-uz/" },
+    { title: "Telegram", link: "https://t.me/eval42" },
     {
-      title: "+998 88 942 5000",
-      link: "tel:+998889425000",
+      title: "Instagram",
+      link: "https://www.instagram.com/omonbek_khojamurodov/",
+    },
+    { title: "GitHub", link: "https://github.com/omonboyweb" },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/omonbekxojamurodov/",
+    },
+    {
+      title: "+99850 72777 45",
+      link: "tel:+998507277745",
     },
   ];
   return (
     <footer className="bg-[#0B1221] text-slate-300 border-t border-blue-border">
-      <div className="container border-blue-border! mx-auto px-4 pt-20 pb-8 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
+      <div className="container border-blue-border!">
+        <div className="flex py-5 md:items-center justify-between px-4 flex-col items-center gap-5 min-[600px]:flex-row min-[500px]:items-center">
           <div className="lg:col-span-2 flex flex-col items-start">
-            <Link href="/#hero">
-              <span className="text-[42px]">Eval42</span>
+            <Link href="/">
+              <span className="text-[32px]">Eval42</span>
             </Link>
-            <p className="mt-6 text-[15px] leading-relaxed text-white max-w-70">
-              Biznesingizni raqamli ekotizimga aylantiruvchi zamonaviy
-              yechimlar.
-            </p>
           </div>
 
           <div>
-            <a
-              href="#services"
-              className="text-white font-medium mb-6 text-[16px] tracking-wide"
-            >
-              Xizmatlar
-            </a>
-            <ul className="flex flex-col gap-4 text-[14px] text-slate-400">
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  ERP & CRM
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  LMS Platformalar
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Custom Development
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Cybersecurity
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-6 text-[16px] tracking-wide">
-              Kompaniya
-            </h4>
-            <ul className="flex flex-col gap-4 text-[14px] text-slate-400">
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Biz haqimizda
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Loyihalar
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Ekspertlarimiz
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Vakansiyalar
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-6 text-[16px] tracking-wide">
-              Resurslar
-            </h4>
-            <ul className="flex flex-col gap-4 text-[14px] text-slate-400">
-              <li>
-                <Link
-                  href="/#faq"
-                  className="hover:text-white transition-colors"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contact"
-                  className="hover:text-white transition-colors"
-                >
-                  Bog&apos;lanish
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Xizmat ko&apos;rsatish shartlari
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Maxfiylik siyosati
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-6 text-[16px] tracking-wide">
-              Ijtimoiy tarmoqlar
-            </h4>
-            <ul className="flex flex-col gap-4 text-[14px] text-slate-400">
+            <ul className="flex text-[14px] text-slate-400 flex-col  min-[500px]:flex-row gap-3 items-center">
               {data.map((item) => (
                 <li key={item.link}>
                   <a
@@ -150,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-20 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-500">
+        <div className="py-5 px-4 border-t border-slate-800/80 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-500">
           <p>2026 Copyright© Eval42.</p>
           <a
             href="mailto:omonbek001@gmail.com"
@@ -158,7 +63,7 @@ export default function Footer() {
           >
             info@eval42.uz
           </a>
-          <p>Barcha huquqlar himoyalangan.</p>
+          <p>All rights reserved.</p>
         </div>
       </div>
     </footer>
