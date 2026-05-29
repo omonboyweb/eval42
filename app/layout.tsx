@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/layouts/header";
 import Footer from "@/layouts/footer";
 import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const sfPro = localFont({
   src: [
@@ -127,6 +128,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -187,6 +189,7 @@ export default function RootLayout({
         <div className="mt-auto">
           <Footer />
         </div>
+        {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );
