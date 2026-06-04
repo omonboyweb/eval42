@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="container mx-auto px-4 relative z-10">
+      <section id="home" className="container mx-auto px-4 relative z-10">
         <div className="pt-20 md:pt-40 lg:ml-20 pb-20 md:pb-32 w-full max-w-3xl">
           <h1 className="font-semibold text-4xl md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] text-h1">
             Every product
@@ -34,23 +34,23 @@ export default function Home() {
             As a result, the product works naturally, quickly, and intuitively.
           </p>
           <div className="mt-10 md:mt-14 flex flex-col sm:flex-row items-center gap-4">
-            <button className="w-full sm:w-auto rounded-sm font-medium text-sm px-8 py-3.5 bg-blue-primary text-white border border-blue-primary transition-all hover:bg-blue-primary/90 hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95">
+            <a
+              href="#contants"
+              className="w-full flex justify-center sm:w-auto rounded-sm font-medium text-sm px-8 py-3.5 bg-blue-primary text-white border border-blue-primary transition-all hover:bg-blue-primary/90 hover:shadow-lg hover:shadow-blue-primary/20 active:scale-95"
+            >
               Start a project
-            </button>
-            <button className="w-full sm:w-auto text-sm font-medium rounded-sm border border-[#D6D9FC] px-8 py-3.5 text-blue-primary bg-white/50 backdrop-blur-sm transition-all hover:bg-[#F3F4FE] hover:border-blue-primary active:scale-95">
-              View demo
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="bg-bg">
+      <section className="bg-bg" id="services">
         <ServicesBentoGrid />
       </section>
-      <section className="bg-bg border-b border-border-line">
+      <section id="projects" className="bg-bg border-b border-border-line">
         <ProjectsAccordion />
       </section>
-      <section>
+      <section id="contants">
         <Contacts />
       </section>
     </main>

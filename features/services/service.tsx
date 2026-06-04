@@ -37,8 +37,8 @@ export const ServicesBentoGrid = () => {
           Simple interfaces for complex ideas
         </h2>
         <p className="text-[32px] leading-[102%] font-light text-gray-800/70 tracking-[-0.03em]">
-          I don&apos;t just write code — I turn your project into a high-performance,
-          pixel-perfect, and user-friendly digital product.
+          I don&apos;t just write code — I turn your project into a
+          high-performance, pixel-perfect, and user-friendly digital product.
         </p>
       </div>
 
@@ -70,7 +70,7 @@ export const ServicesBentoGrid = () => {
         </BentoCard>
 
         <BentoCard className="md:col-span-1 lg:col-span-2 min-h-120 p-8 flex flex-col relative overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden!">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden! ">
             <div className="absolute -top-10 -left-10 w-50 h-50 md:w-62.5 md:h-62.5 rounded-full blur-[100px] opacity-30">
               <PurpleCircle className="w-full h-full" />
             </div>
@@ -82,7 +82,7 @@ export const ServicesBentoGrid = () => {
             </div>
           </div>
 
-          <div className="relative z-50 pointer-events-none w-full mb-4">
+          <div className="relative z-40 pointer-events-none w-full mb-4">
             <div className="flex justify-between items-center pointer-events-auto">
               <h3 className="text-2xl font-semibold text-h1 leading-[135%]">
                 Product Engineering
@@ -97,7 +97,7 @@ export const ServicesBentoGrid = () => {
             </p>
           </div>
 
-          <div className="transition-all duration-300 z-50">
+          <div className="transition-all duration-300 z-40">
             <LmsWidget />
           </div>
         </BentoCard>
@@ -144,8 +144,10 @@ export const ServicesBentoGrid = () => {
                 <span className="text-purple-400">import</span> {"{"} Core,
                 Security, Payment {"}"}{" "}
                 <span className="text-purple-400">from</span>{" "}
-                <span className="text-amber-300">&apos;@infonex/enterprise&apos;</span>;
-                {"\n\n"}
+                <span className="text-amber-300">
+                  &apos;@infonex/enterprise&apos;
+                </span>
+                ;{"\n\n"}
                 <span className="text-purple-400">async function</span>{" "}
                 <span className="text-blue-400">deploySystem</span>(config:{" "}
                 <span className="text-emerald-400">AppConfig</span>) {"{\n"}
@@ -159,8 +161,10 @@ export const ServicesBentoGrid = () => {
                 <span className="text-emerald-400">Core</span>.
                 <span className="text-blue-400">connect</span>({"{\n"}
                 {"    "}mode:{" "}
-                <span className="text-amber-300">&apos;high-availability&apos;</span>,
-                {"\n"}
+                <span className="text-amber-300">
+                  &apos;high-availability&apos;
+                </span>
+                ,{"\n"}
                 {"    "}encryption:{" "}
                 <span className="text-amber-300">&apos;E2EE&apos;</span>
                 {"\n"}
@@ -176,10 +180,13 @@ export const ServicesBentoGrid = () => {
                 <span className="text-blue-400">Gateway</span>({"{\n"}
                 {"    "}providers: [
                 <span className="text-amber-300">&apos;Stripe&apos;</span>,{" "}
-                <span className="text-amber-300">&apos;Bank of America&apos;</span>,{" "}
-                <span className="text-amber-300">&apos;PayPal&apos;</span>],{"\n"}
-                {"    "}currency: <span className="text-amber-300">&apos;USD&apos;</span>,
+                <span className="text-amber-300">
+                  &apos;Bank of America&apos;
+                </span>
+                , <span className="text-amber-300">&apos;PayPal&apos;</span>],
                 {"\n"}
+                {"    "}currency:{" "}
+                <span className="text-amber-300">&apos;USD&apos;</span>,{"\n"}
                 {"    "}autoTaxCalculate:{" "}
                 <span className="text-purple-400">true</span>,{" "}
                 <span className="text-slate-500">{"// VAT calculation\n"}</span>
@@ -196,8 +203,10 @@ export const ServicesBentoGrid = () => {
                 {"    "}roles: [
                 <span className="text-amber-300">&apos;Director&apos;</span>,{" "}
                 <span className="text-amber-300">&apos;Manager&apos;</span>,{" "}
-                <span className="text-amber-300">&apos;Accountant&apos;</span>],{"\n"}
-                {"    "}mfa: <span className="text-amber-300">&apos;sms-auth&apos;</span>
+                <span className="text-amber-300">&apos;Accountant&apos;</span>],
+                {"\n"}
+                {"    "}mfa:{" "}
+                <span className="text-amber-300">&apos;sms-auth&apos;</span>
                 {"\n"}
                 {"  }"});{"\n\n"}
                 {"  "}console.<span className="text-blue-400">log</span>(
@@ -207,8 +216,10 @@ export const ServicesBentoGrid = () => {
                 );{"\n"}
                 {"  "}
                 <span className="text-purple-400">return</span> {"{"} status:{" "}
-                <span className="text-amber-300">&quot;Online&quot;</span>, uptime:{" "}
-                <span className="text-amber-300">&quot;99.99%&quot;</span> {"}"};{"\n"}
+                <span className="text-amber-300">&quot;Online&quot;</span>,
+                uptime:{" "}
+                <span className="text-amber-300">&quot;99.99%&quot;</span> {"}"}
+                ;{"\n"}
                 {"}"}
               </code>
             </pre>

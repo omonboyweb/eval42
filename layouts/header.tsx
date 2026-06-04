@@ -5,9 +5,9 @@ import Link from "next/link";
 import { X, Menu, FileText, ArrowUpRight } from "lucide-react";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
+  { href: "#home", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#services", label: "Services" },
 ];
 
 const Header = () => {
@@ -60,7 +60,7 @@ const Header = () => {
             </nav>
             <div className="hidden md:flex items-center gap-3 shrink-0">
               <Link
-                href="/cv.pdf"
+                href="/Omonbek_Frontend_Developer_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-gray-600
@@ -76,14 +76,15 @@ const Header = () => {
                 />
               </Link>
 
-              <button
+              <a
+                href="tel:+998884280937"
                 type="button"
                 className="px-4 py-2 text-sm font-medium text-white rounded-md
                            bg-blue-primary hover:bg-blue-primary/80 active:scale-[0.97]
                            transition-all duration-150 shadow-sm"
               >
                 Contact
-              </button>
+              </a>
             </div>
             <button
               type="button"
@@ -162,8 +163,8 @@ const Header = () => {
         </nav>
 
         <div className="px-5 py-5 border-t border-gray-100 space-y-2.5">
-          <Link
-            href="/cv.pdf"
+          <a
+            href="/Omonbek_Frontend_Developer_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
@@ -174,16 +175,17 @@ const Header = () => {
             <FileText size={15} strokeWidth={1.75} />
             CV yuklab olish
             <ArrowUpRight size={13} strokeWidth={2} className="text-gray-400" />
-          </Link>
+          </a>
 
-          <button
+          <a
+            href="tel:+998884280937"
             type="button"
-            className="w-full px-4 py-2.5 text-sm font-medium text-white rounded-md
+            className="w-full flex justify-center px-4 py-2.5 text-sm font-medium text-white rounded-md
                         bg-blue-primary hover:bg-blue-primary/80 active:scale-[0.98]
                        transition-all duration-150 shadow-sm"
           >
             Men bilan bog&apos;lanish
-          </button>
+          </a>
         </div>
       </div>
     </>

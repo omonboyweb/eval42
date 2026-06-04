@@ -22,8 +22,8 @@ export default function Footer() {
       <div className="container border-blue-border!">
         <div className="flex py-5 md:items-center justify-between px-4 flex-col items-center gap-5 min-[600px]:flex-row min-[500px]:items-center">
           <div className="lg:col-span-2 flex flex-col items-start">
-            <Link href="/">
-              <span className="text-[32px]">Eval42</span>
+            <Link href="#home">
+              <span className="text-[32px]">Omonbek</span>
             </Link>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="py-5 px-4 border-t border-slate-800/80 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-slate-500">
-          <p>2026 Copyright© Eval42.</p>
+          <p>2026 Copyright© Omonbek Khujamurodov</p>
           <a
             href="mailto:omonbek001@gmail.com"
             className="hover:text-slate-300 transition-colors"
