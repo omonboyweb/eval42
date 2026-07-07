@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/layouts/header";
 import Footer from "@/layouts/footer";
+import Preloader from "@/components/fx/preloader";
+import Cursor from "@/components/fx/cursor";
+import Chrome from "@/components/fx/chrome";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -178,17 +181,18 @@ export default function RootLayout({
         "font-sans",
       )}
     >
-      <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-blue-primary/20 selection:text-blue-primary">
+      <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
+        <Preloader />
+        <Cursor />
+        <Chrome />
         <Header />
-        <main className="flex-1">{children}</main>
-        <div className="mt-auto">
-          <Footer />
-        </div>
+        <div className="flex-1">{children}</div>
+        <Footer />
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
