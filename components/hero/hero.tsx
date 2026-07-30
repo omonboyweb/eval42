@@ -6,6 +6,7 @@ import {
   READY_EVENT,
   SplitText,
   finePointer,
+  isReady,
   lerp,
   prefersReducedMotion,
   scrambleEl,
@@ -41,6 +42,10 @@ export default function Hero() {
         setLive(true);
       }, 1500);
     };
+    if (isReady()) {
+      onReady();
+      return () => clearTimeout(t1);
+    }
     window.addEventListener(READY_EVENT, onReady);
     return () => {
       window.removeEventListener(READY_EVENT, onReady);
@@ -112,9 +117,9 @@ export default function Hero() {
         </h1>
         <div className="hero-sub">
           <p>
-            <b>Omonbek Khujamurodov</b> — frontend engineer crafting
-            high-performance SaaS platforms, real-time dashboards and secure
-            web ecosystems. Code that runs fast, reads clean and scales.
+            <b>Omonbek Khujamurodov</b> — frontend engineer. I build websites
+            and web platforms that open fast, feel effortless and keep your
+            data safe — from the first sketch to real, everyday users.
           </p>
           <div className="hero-cta">
             <a ref={ctaRef} className="btn" href="#contact" data-hover>

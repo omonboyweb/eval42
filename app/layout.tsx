@@ -57,11 +57,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
-    languages: {
-      "uz-UZ": "/uz",
-      "en-US": "/en",
-      "ru-RU": "/ru",
-    },
   },
   generator: "Next.js",
   applicationName: "Eval42",

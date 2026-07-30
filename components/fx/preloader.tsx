@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { READY_EVENT, prefersReducedMotion, scrambleEl } from "@/lib/fx";
+import { markReady, prefersReducedMotion, scrambleEl } from "@/lib/fx";
 
 const BOOT = [
   "loading modules .......... OK",
@@ -22,7 +22,7 @@ export default function Preloader() {
     const ready = () => {
       if (fired.current) return;
       fired.current = true;
-      window.dispatchEvent(new CustomEvent(READY_EVENT));
+      markReady();
     };
 
     if (prefersReducedMotion() || sessionStorage.getItem("e42seen")) {

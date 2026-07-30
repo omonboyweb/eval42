@@ -16,6 +16,22 @@ const GLYPHS = "!<>-_\\/[]{}=+*^?#01";
 
 export const READY_EVENT = "eval42:ready";
 
+/** Fire the ready event once, and remember it fired so late-mounting
+ * listeners (mount order between components isn't guaranteed) can
+ * catch up instead of missing the event entirely. */
+export function markReady() {
+  if (typeof window === "undefined") return;
+  (window as Window & { __eval42Ready?: boolean }).__eval42Ready = true;
+  window.dispatchEvent(new CustomEvent(READY_EVENT));
+}
+
+export function isReady() {
+  return (
+    typeof window !== "undefined" &&
+    (window as Window & { __eval42Ready?: boolean }).__eval42Ready === true
+  );
+}
+
 export function prefersReducedMotion() {
   return (
     typeof window !== "undefined" &&

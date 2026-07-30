@@ -28,10 +28,10 @@ const CASES: CaseData[] = [
     file: "case/01",
     where: "food delivery · USA",
     title: "HalalHub",
-    desc: "A digital ordering system for the US halal food delivery market. Real-time order tracking, vendor dashboards and payments — built to stay fast under load.",
+    desc: "Halal food delivery for the US market. Customers order in a couple of taps, couriers are tracked live on the map, restaurants run everything from one panel — and it stays fast at rush hour.",
     stats: [
       { value: 2, suffix: "K+", label: "USERS" },
-      { value: 24, suffix: "/7", label: "MONITORING" },
+      { value: 24, suffix: "/7", label: "ONLINE" },
       { text: "USA", label: "MARKET" },
     ],
     img: "/halalhub.png",
@@ -50,15 +50,15 @@ const CASES: CaseData[] = [
     wm: "INFODECK",
     file: "case/02",
     where: "education · UZB",
-    title: "Infodeck",
-    desc: "An education platform connecting every learning center in one system — courses, schedules, payments and progress analytics for 10K+ students.",
+    title: "Igoo",
+    desc: "One system for a whole network of learning centers: courses, class schedules, payments and every student's progress — clear for admins, teachers and parents alike.",
     stats: [
-      { value: 10, suffix: "K+", label: "USERS" },
-      { value: 24, suffix: "/7", label: "MONITORING" },
+      { value: 10, suffix: "K+", label: "STUDENTS" },
+      { value: 24, suffix: "/7", label: "ONLINE" },
       { text: "UZB", label: "MARKET" },
     ],
     img: "/infodesk.png",
-    alt: "Infodeck dashboard — lessons schedule, rooms and finance analytics",
+    alt: "Igoo dashboard — lessons schedule, rooms and finance analytics",
     mat: "#0c1526",
     matLine: "rgba(96,140,255,.28)",
     chip: (
@@ -66,6 +66,7 @@ const CASES: CaseData[] = [
         ACTIVE NOW <b>10K+ STUDENTS</b>
       </>
     ),
+    link:"https://igoo.uz"
   },
   {
     id: "homex",
@@ -73,10 +74,10 @@ const CASES: CaseData[] = [
     file: "case/03",
     where: "marketplace · UZB",
     title: "Homex",
-    desc: "A construction & repair marketplace matching craftsmen with clients — listings, escrow-style orders and reputation built into the product.",
+    desc: "A marketplace that connects craftsmen with clients for building and repair work — clear listings, safe payments and honest reviews built in.",
     stats: [
       { value: 10, suffix: "K+", label: "USERS" },
-      { value: 24, suffix: "/7", label: "MONITORING" },
+      { value: 24, suffix: "/7", label: "ONLINE" },
       { text: "UZB", label: "MARKET" },
     ],
     img: "/homex.png",
@@ -88,6 +89,7 @@ const CASES: CaseData[] = [
         PROS ONLINE <b>642</b>
       </>
     ),
+    link:"https://homexs.uz"
   },
 ];
 
@@ -168,7 +170,7 @@ function CaseSlide({ data }: { data: CaseData }) {
               VISIT LIVE <span>↗</span>
             </a>
           ) : (
-            <span className="visit-btn static">IN PRODUCTION</span>
+            <span className="visit-btn static">IN DAILY USE</span>
           )}
         </div>
         <div className="case-visual">
@@ -260,12 +262,12 @@ export default function WorkGallery() {
           <div className="hslide intro">
             <span className="sec-tag">01 / SELECTED WORK</span>
             <h2>
-              PRODUCTION
+              REAL
               <br />
-              SYSTEMS.
+              PRODUCTS.
             </h2>
             <div className="hint">
-              DRAG YOUR SCROLL — GALLERY MOVES <b>→</b>
+              KEEP SCROLLING — THE GALLERY MOVES <b>→</b>
             </div>
           </div>
           {CASES.map((c) => (

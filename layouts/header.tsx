@@ -76,6 +76,14 @@ export default function Header() {
           >
             TELEGRAM ↗
           </a>
+          <a
+            href="/Omonbek_Frontend_Developer_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-hover
+          >
+            CV ↗
+          </a>
           <span>TASHKENT, UZ</span>
         </div>
       </nav>

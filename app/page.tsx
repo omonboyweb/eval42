@@ -4,6 +4,7 @@ import Manifesto from "@/components/manifesto";
 import WorkGallery from "@/components/work/work-gallery";
 import ServicesLive from "@/components/services/services-live";
 import StatsBand from "@/components/stats-band";
+import Contacts from "@/features/contacts/contacts";
 import Outro from "@/components/outro";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <WorkGallery />
       <ServicesLive />
       <StatsBand />
+      <Contacts />
       <Outro />
     </main>
   );

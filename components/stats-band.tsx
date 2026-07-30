@@ -71,14 +71,14 @@ export default function StatsBand() {
               <Counter to={3} />
               <span className="suf">×</span>
             </b>
-            <span>PRODUCTS IN PRODUCTION</span>
+            <span>LIVE PRODUCTS</span>
           </Reveal>
           <Reveal className="num">
             <b>
               <Counter to={99} />
               <span className="suf">.9%</span>
             </b>
-            <span>UPTIME TARGET</span>
+            <span>ALWAYS ONLINE</span>
           </Reveal>
           <Reveal className="num egg" onClick={runRain} data-hover title="?">
             <b>

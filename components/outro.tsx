@@ -6,10 +6,7 @@ export default function Outro() {
   const btnRef = useMagnet<HTMLAnchorElement>();
 
   return (
-    <section className="outro" id="contact">
-      <Reveal>
-        <span className="sec-tag">03 / CONTACT</span>
-      </Reveal>
+    <section className="outro">
       <SplitTitle lines={["LET'S", "BUILD."]} />
       <Reveal>
         <a
@@ -21,6 +18,22 @@ export default function Outro() {
         >
           omonbek001@gmail.com <span className="arr">→</span>
         </a>
+      </Reveal>
+      <Reveal className="assure">
+        <span>
+          OR MESSAGE ME ON{" "}
+          <a
+            href="https://t.me/eval42"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-hover
+          >
+            TELEGRAM ↗
+          </a>
+        </span>
+        <span>
+          USUALLY REPLIES WITHIN <b>24H</b> · TASHKENT (GMT+5)
+        </span>
       </Reveal>
     </section>
   );

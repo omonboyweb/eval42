@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 import { clamp, prefersReducedMotion } from "@/lib/fx";
 
 const TEXT =
-  "Most websites are built. Mine are engineered — performance measured in milliseconds, security by default, motion with intent. Every pixel earns its place.";
-const KEYWORDS = new Set(["engineered", "milliseconds,", "security", "intent."]);
+  "Most websites are just built. Mine are engineered — they open in milliseconds, protect your data by default, and move with intent. Every pixel earns its place.";
+const KEYWORDS = new Set(["engineered", "milliseconds,", "protect", "intent."]);
 const WORDS = TEXT.split(" ");
 
 export default function Manifesto() {
